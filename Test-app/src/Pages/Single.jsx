@@ -6,7 +6,7 @@ import {publicRequest} from '../apiRequest'
 import {Link} from 'react-router-dom'
 import {useContext} from 'react'
 import {Context} from  '../Context/Context'
-
+import axios from 'axios'
 
 const Container = styled.div`
 margin:10px auto;
