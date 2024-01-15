@@ -110,6 +110,8 @@ export default function Single(){
     const [updateMode, setUpdateMode]= useState(false)
     const {user}= useContext(Context)
 
+    console.log("id", id)
+
     useEffect(()=> {
       const getData= async()=> {
         try{

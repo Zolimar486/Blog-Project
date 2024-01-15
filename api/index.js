@@ -24,6 +24,7 @@ app.use(express.urlencoded({extended: true, limit:'50mb'}))
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(cors())
 
+
 app.get('/', async(req,res) => {
     res.status(200).json({message :"Successfully Conected"})
 })
