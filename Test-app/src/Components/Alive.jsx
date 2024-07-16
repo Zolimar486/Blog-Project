@@ -1,12 +1,12 @@
 import { useEffect } from "react"
-import { publicRequest } from '../apiRequest'
+import axios from 'axios'
 
 export default function Alive(){
 
   useEffect(()=>{
      const pingServer = async()=> {
        try{
-        await publicRequest.get('/ping')
+        await axios.get('http://localhost:5000/api/ping')
         console.log("Server Pinged ")
 
        }catch(err){
